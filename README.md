@@ -30,11 +30,10 @@ If you're a `brew` user, use:
 ```shell
 brew install uv
 ```
-
+else:
 ```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-
 If your system doesn't have `curl`, you can use wget:
 ```shell
 wget -qO- https://astral.sh/uv/install.sh | sh
