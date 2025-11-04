@@ -52,7 +52,7 @@ Yeah! You know who you are! 💀
 If you're using Docker, I assume you can read documentation so just follow this [link](https://docs.astral.sh/uv/guides/integration/docker/).
 
 ## Post installation steps
-Do verify that you can access `uv` in your terminal just 
+Do verify that you can access `uv` in your terminal.
 
 See an example [here](https://i.imgur.com/gOW2CRl.png). If you can see this, please proceed to the next step.
 
