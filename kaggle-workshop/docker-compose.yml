@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Iris Classification API Service
+  iris-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iris-classification-api
+    ports:
+      # Map host port to container port
+      - "5136:5136"
+    environment:
+      # Environment variables for the application
+      - PYTHONUNBUFFERED=1
+    restart: always
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5136/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
